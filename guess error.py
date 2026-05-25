@@ -1,12 +1,12 @@
 import random 
 
-number = random.randint(1, 50)
+number = random.randint(1, 100)
 
-print("Guess the number between 1 and 50")
+print("Guess the number between 1 and 100")
 
 while True:
     guess = int(input("Enter your guess: "))
-    if guess>50:
+    if guess>100 or guess< 1:
         print("invalid!")
     if guess < number:
         print(" low! Try again.")
